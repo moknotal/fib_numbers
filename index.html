@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>fibonacci numbers</title>
+	</head>
+	<body>
+		<script>
+		var n = prompt('Enter fib number','');
+			if (n>0) {function fib(n) {
+  			var a = 1, b = 1;
+  			for (var i = 3; i <= n; i++) {
+   			var c = a + b;
+    		a = b;
+    		b = c;
+  			}         
+  			return b;
+			}
+			alert( fib(n) );}
+			else {
+				alert(0);
+			}
+			</script>
+	</body>
+</html>
